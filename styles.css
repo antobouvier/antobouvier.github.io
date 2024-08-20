@@ -23,7 +23,12 @@ p {
 }
 
 
-
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 
 header {
@@ -254,10 +259,15 @@ footer {
         font-size: 18px;
     }
 
+    .video-container video {
+            max-width: 80%;
+        }
+
     .hero-text {
         padding: 0.8rem;
         font-size: 1.2rem;
     }
+
 
     .services {
         flex-direction: column;
@@ -287,5 +297,98 @@ footer {
         width: 35px;
         line-height: 35px;
         font-size: 18px;
+    }
+}
+
+/* max-widht para celus */ 
+
+@media (max-width: 599px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text {
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        max-width: 150px;
+        margin: 0.5rem auto;
+    }
+
+    .images {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .team-member {
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .socials a {
+        min-height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .video-container video {
+        max-width: 100%;
     }
 }
